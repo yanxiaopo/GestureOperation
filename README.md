@@ -3,4 +3,6 @@
 
 1.单指拖拽
 2.两指旋转\缩放
-![img]https://github.com/yanxiaopo/GestureOperation/blob/master/app/src/main/res/drawable/preview.gif
+-----------------------------------------------------------   
+
+![image](https://github.com/yanxiaopo/GestureOperation/blob/master/app/src/main/res/drawable/preview.gif)
