@@ -11,20 +11,23 @@
         android:id="@+id/contain"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="4:4"></RelativeLayout>
+        app:layout_constraintBottom_toTopOf="@+id/edit_layout"
+        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
 
 
     <LinearLayout
         android:id="@+id/edit_layout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@drawable/stroke"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contain">
 
         <TextView
             android:id="@+id/delete"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="删除"
@@ -34,7 +37,7 @@
         <TextView
             android:id="@+id/reverse"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="翻转"
@@ -44,7 +47,7 @@
         <TextView
             android:id="@+id/up_layer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="上一层"
@@ -55,7 +58,7 @@
         <TextView
             android:id="@+id/down_layer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="下一层"
@@ -65,16 +68,17 @@
         <TextView
             android:id="@+id/frame_hide"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="隐藏边框"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
+
         <TextView
             android:id="@+id/add_pic"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:text="增加图片"

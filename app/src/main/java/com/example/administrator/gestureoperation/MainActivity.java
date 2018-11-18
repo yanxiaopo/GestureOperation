@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         drawingView = new OperationView(this);
 
-        ImageBean imageBean = new ImageBean(R.drawable.virgo);
+        ImageBean imageBean = new ImageBean(R.drawable.cat);
         metaBeanList.add(imageBean);
         loadBitmap(this, drawingView, imageBean);
 
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 drawingView.resetFocus();
                 break;
             case R.id.add_pic:
-                ImageBean imageBean = new ImageBean(R.drawable.headdress);
+                ImageBean imageBean = new ImageBean(R.drawable.turtle);
                 metaBeanList.add(imageBean);
                 loadBitmap(this, drawingView, imageBean);
 
